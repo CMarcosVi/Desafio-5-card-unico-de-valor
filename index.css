@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e5eff5;
+}
+main{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-radius: .25rem;
+}
+.par1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: .25rem .25rem 0rem 0rem;
+}
+.titulo1{
+    font-size: 16px;
+    padding-bottom: 1rem;
+    color:#2ab2af;
+}
+.titulo2{
+    margin-bottom: 1rem;
+    font-size: 16px;
+    color: #fff;
+}
+.titulo3{
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.par2local1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color:#2ab2af ;
+    border-radius: 0rem 0rem 0rem .25rem;
+}
+.par2local2{
+    padding: 2rem;
+    background-color:#00c0bd ;
+    border-radius: 0rem 0rem .25rem 0rem;
+}
+.par2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+}
+.preco{
+    display: flex;
+    align-items: baseline;
+}
+.precoDoProduto{
+    margin-right: 1rem;
+    color: #fff;
+}
+.perMonth{
+    color:#6b6b6b ;
+}
+.subtitulo1{
+    margin-bottom: 1rem;
+    color:hsl(71, 73%, 54%);
+}
+.paragrafo1{
+    font-size: 14px;
+    color:hsl(218, 22%, 67%);
+}
+.paragrafo2{
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+.paragrafo3{
+    font-size: 14px;
+    color:#fff;
+}
+button{
+    border-radius: .25rem;
+    height: 2rem;
+    width: 100%;
+    color: #fff;
+    background-color:#c0df34 ;
+    border: none;
+    box-shadow: 0px 7px 17px -4px rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 540px){
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .par2{
+        display: flex;
+        flex-direction: column;
+    }
+    .par2local1{
+        border-radius: 0rem;
+    }
+    .par2local2{
+        border-radius: 0rem 0rem .25rem .25rem;
+    }
+}
